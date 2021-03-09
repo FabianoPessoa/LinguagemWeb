@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* Estilisa toda a a'rea */
+body{	
+		/* background-color: white; */
+		/* Todo o fundo do site com fundo branco */
+		background-color: #dddddd;
+		color: rgba(0, 0, 0, 1);							
+}
+/* Difica'o contem todo o contu'do do corpo */
+/* Problemas na interface div */
+div#interface {
+	width: 800px;
+	/* interface com fundo branco */
+	background-color: #ffffff;
+	margin: -30px, auto, 0px, auto;
+	box-shadow: 0px, 0px, 10px, black;
+}
+/* Estilisa os para'grafos */
+p{
+	text-align: justify;
+	text-indent: 50px;	
+}
+			
+/* Formatacao de imagem ou legenda */
+/* Cria uma borda em torno da imagem */
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+/* Alterei o percentual porque estava ficando grande */
+/* demais */
+/* Imagem era pequena mas agora ocupa todo o quadro gerado
+acima */
+figure.foto-legenda img{
+	/* Fica responsivo em relacao a pagina */
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	/* Fundo */
+	background-color: rgba(0,0,0,.4);
+	/* Letra Branca */
+	color: white;
+	/* Borda ocupa toda a imgem */
+	width: 100%;
+	height: 100%;
+	/* Espaco dentro da legenda */
+	padding: 10px;
+	/* Cria o box dentro da borda */
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* Formatac,a'o do menu */
+/* Deveria retirar as marcac,o'es de ponto do menu */
+/* Na'o esta' funcionando */
+nav#menu ul { 
+	position: absolute;
+	top: -25px;
+	left: 250px;
+	/* Cria um menu */
+	list-style: none;
+	/* Deixa em caixa alta */
+	text-transform: uppercase;
+
+}
+/* Formatacao das listas */
+nav#menu li {
+	/* Deixa tudo na horizontal */
+	display: inline-block;
+	/* Cor de fundo cinsa */
+	background-color: #dddddd;
+	/* Prenchimento com espac,o */
+	padding: 10px;
+	/* Na'o esta' funcionando */
+	margin: 2px;
+	/* Compatibilidade entre navegadores antigos */
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	transition: background-color 1s;
+}
+/* Produzir efeito quando passar o mause */
+/* Na'o funcionou direito */
+/* Na'o funciou em alguma versaoes */
+nav:menu li:hover {
+	background-color: #606060;
+}
+
+/* Formatac,a'o dos ti'tulos */
+nav#menu h1 {
+	display: none;
+}
+
+
+nav#menu a{
+	/* As letras ficam pretas */
+	color: #000000;
+	text-decoration: none;
+}
+/* Hover na'o esta' funcionando muito bem */
+/* Mas dessa vez funcionou */
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+
+
+
