@@ -1,0 +1,212 @@
+Cria um arquivo oculto .git
+	C\> git init
+Verifica o status do conteiner
+C\> git status
+Adiciona o script ao container
+C:\> git add <nome do arquivo>.<extensao>
+Comentar o script
+C:\> git commit -m "comentario"
+Depois identificar o comentario
+$ git log --oneline --graph
+Verificar com
+	volta pra tras
+	vai para frente
+	apaga comentario
+	divide linhas de execucao
+	volta para o final
+$ git checkout <hash que voce quer ver>
+
+*************COMANDOS DO GITHUB***********
+Entrar no Git Bash
+# Clicando no ícone;
+Saindo do Git Bash
+~$ exit
+Visualizar diretório corrente
+~$ pwd
+Entrar em um diretório
+~$ cd "nome_do_diretório"
+Saindo do Diretório para um nível acima
+~$ cd[espaço]..
+Listando todos os diretório correntes
+~$ ls -l ou ls -la
+Eu acho que roda cria um diretório
+~$ mkdir
+Apaga um diretório
+~$ rm
+Descreve a função do comando
+~$ man <nome do comando git>
+Limpar a tela
+~$ clear 
+Aumentando o tamanho da fonte
+~$ [Ctrl]+movimento de roda do mouse.
+Demonstra os diretório
+~$ ls
+Demonstra os diretório
+
+============================================================
+cont...COMANDOS BÁSICOS GIT (init status add commit log)
+-------------------------------------------------------------
+::::Criando um Repositório Local::::
+#1) Crie um PastaProjeto e direcione o Git Bash até lá
+Va' para o explorador do windows clique com o bota'o direito do
+mouse e escolha Git Bash here. Ele abre o Git Bash direto no
+direto'rio.
+#2) Crie um diretório oculto .git dentro da diretório no PC
+#3) 
+~$ git init [Enter]
+~$ Initialized empty Git repository in C:/path/PastaProjeto/.git
+~$ ls [Enter]
+Aparece os arquivos que subirão.
+Se quiser ver diretório oculto .git faça
+~$ ls -a
+Se quiser ver o status do .git pasta repositório criado faça
+~$ git status
+On branch master
+No commits yet (Algo como sem commit ainda)
+nothinf to commit...
+Criando dois arquivo dentro da pasta repositório
+~$ touch a.txt b.txt
+Verificando o status da pasta
+~$ git status
+On branch master
+No commits yet
+	a.txt
+	b.txt
+nothinf added to commit but untracked..
+Adicionando os aquivos ao container
+~$ git add a.txt
+~4 git add b.txt
+ou tudo de uma vez
+~$ git add *
+~$ git add .
+~$ git status
+On branch master
+No commits yet
+	a.txt
+	b.txt
+	agora verdes
+Identificar o cotainer e armazenaar
+~$ git commit -m "Criado os arquivos a.txt b.txt"
+~$ ls
+a.txt b.txt
+~$ git status
+On branch master
+nothing to commit,....
+~$ git log
+commit aasdfafakjfhfiuhffuf (HEAD-> master)
+Autor: Fabiano Pesoa <fabiano.pessoa30@gmail.com>
+Date: set jan data
+	Criado os arquivos a.txt b.txt
+Criando um arquivo c.txt
+~$ touch c.txt
+~$ No meu caso eu teria que fazer
+~$ vim a.txt
+Digitar alguma alteração
+Salvar :wq
+Para o caso do VSCode
+~$ code.
+C:\> Entrando no windows e alterando o arquivo
+~$ git status
+O git identificará que houve uma alteração
+~$ git add *
+~$ git status
+ Um arquivo foi alterado 
+ outro foi criado
+~$ git commit -m "modificado o arquivo a.txt e criado o c.txt"
+~$ git status
+Tudo ok
+~$ git log
+Descreve os cammits
+Exibindo o log de uma forma melhor
+~$ git log --oneline
+===================================================================
+cont.... COMANDO DO GITHUB
+* Rastrear mudanças
+* Desfazer alterações
+* Recuperar versores anteriores do projeto
+~$ git log
+Mostra todos os cammits das alterações
+Autor e data
+~$ git log --oneline
+Resumo dos hash do cammit
+(HEAD -> master)
+Ex.:commit d76491c criou o a.txt e b.txt
+   :commit bc4836c alterou o a.txt e criou o c.txt
+master o início
+HEAD seguinte projeto. Sempre será o último cammit
+Desenho do gráfico de commit
+~$ git log --graph
+Simplificando podemos fazer
+~$ git log --oneline --graph
+* d76491c (HEAD -> master) comentário
+* bc4836c comentário
+~$ 
+================================================
+******************GitHub***********************
+-----------------------------------------------
+#)-> Ferramenta de versionamento;
+#)-> Ir para a pa'gina https://git-scm.com/downoads
+#)-> Curso GIT e GITHUB - Instalando o GIT no Linux - Clonando repositórios do GITHUB
+#)-> No terminal:
+Verificar o direto'rio em /home/fabiano
+:~$ pwd
+Atualizando o reposito'rio
+:~$ sudo apt-get update
+Instala git
+:~$ sudo apt-get install git
+:~$ pwd
+/home/fabiano
+Verifica os direto'rio ocultos
+:~$ ls -a
+A're de trabalho....
+.bash_history
+.bash_logout
+# configurac,o'es
+:~$ git config --global user.name "FabianoPessoa"
+:~$ git config --global user.email "fabiano.pessoa30@gmail.com"
+# Verificando a criac,a'o do .gitconfig em ...
+:~$ ls -a
+# Verificando os para'metros de configurac,a'o do git
+:~$ cat .gitconfig
+[user]
+	nome = 
+	email =
+#)-> Acessar: URL github.com
+#)-> Logar:
+#)-> [Start a projeto]
+#)-> Owner: FabianoPessoa/<nome_do_repositorio>
+#)-> Descricao: <Introducao ao Shell>
+#)-> [v] Inicialize este repositorio com um readme
+#)-> [Criar Repositorio]
+#)-> Deslogar
+#)-> Acesar https://github.com/fabianopessoa
+#)-> Procure o repositorio que acabou de criar
+#)-> [Clonar esse repositorio]
+ou
+#)-> Digite o link ^ acima no terminal
+#)-> Retorne para o terminal
+:~$ git clone https://github.com/fabianopessoa/<nome_do_repositorio>
+:~$ ls
+# Veja que ele criou o direto'rio <nome_do_repositorio>
+:~$ cd <nome_do_repositorio>
+REAME.md
+:~$ git status
+nothing to commit....
+# Crie um arquivo em shell script
+:~$ vi hello.sh
+# Os comando de lote do linux sao .sh
+
+==============================================================
+Clonado um repositótio do site:
+$ git clone <http:...>
+Para subir faça:
+$ git push
+Obs.:
+A partir de agora procure trabalhar em cima dos arquivos
+da internet. Fac,a BackUp em computador frequente.
+
+
+
+		FIM DE COMANDOS DO GITHUB
+
+
