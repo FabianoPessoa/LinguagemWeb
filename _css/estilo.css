@@ -34,7 +34,7 @@ p{
 header#cabecalho img#icone{
 	position: absolute;
 	/* posicionamento da imagem */
-	left: 780px;
+	left: 750px;
 	top: 70px;
 }
 /* configuracao dos objetos que esta'o do cabec,alho */
@@ -43,6 +43,11 @@ header#cabecalho {
 	border-bottom: 1px #606060 solid;
 	/* desce a linha um pouco */
 	height:  150px;
+	/* para carregar a imagem no co'digo css */
+	/* fac,a movimento de direto'rio como num terminal
+     tipo ../_imagens/logo.png*/
+	 /* Na'o  funcionou no programa */
+	background: url("../_imagens/glass-logo-peg.jpg");
 }
 /* Formatacao de imagem ou legenda */
 /* Cria uma borda em torno da imagem */
