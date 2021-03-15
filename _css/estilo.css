@@ -45,9 +45,15 @@ header#cabecalho {
 	height:  150px;
 	/* para carregar a imagem no co'digo css */
 	/* fac,a movimento de direto'rio como num terminal
-     tipo ../_imagens/logo.png*/
-	 /* Na'o  funcionou no programa */
-	background: url("../_imagens/glass-logo-peg.jpg");
+     tipo ../_imagens/logo.png
+	 Na'o  funcionou no programa
+	talvez uma falha no direcionamento da pa'gina*/
+	/* background: url("../_imagens/glass-logo-peg.jpg"); */
+	background: url("glass-logo-peg.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1{
+	font-family: Arial, sans-serif;
 }
 /* Formatacao de imagem ou legenda */
 /* Cria uma borda em torno da imagem */
