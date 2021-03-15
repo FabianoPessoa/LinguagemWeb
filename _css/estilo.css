@@ -29,7 +29,21 @@ p{
 	text-align: justify;
 	text-indent: 50px;
 }
-
+/* posicionento do i'cone do o'culos no topo do  */
+/* site */
+header#cabecalho img#icone{
+	position: absolute;
+	/* posicionamento da imagem */
+	left: 780px;
+	top: 70px;
+}
+/* configuracao dos objetos que esta'o do cabec,alho */
+header#cabecalho {
+	/* linha que passa no topo */
+	border-bottom: 1px #606060 solid;
+	/* desce a linha um pouco */
+	height:  150px;
+}
 /* Formatacao de imagem ou legenda */
 /* Cria uma borda em torno da imagem */
 figure.foto-legenda{
@@ -73,7 +87,8 @@ figure.foto-legenda:hover figcaption{
 /* Na'o esta' funcionando */
 nav#menu ul {
 	position: absolute;
-	top: -25px;
+	/* alterac,a'o feita por mim */
+	top: -2px;
 	left: 250px;
 	/* Cria um menu */
 	list-style: none;
