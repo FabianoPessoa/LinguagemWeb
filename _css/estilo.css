@@ -1,26 +1,35 @@
 @charset "UTF-8";
 /* Estilisa toda a a'rea */
-body{	
+/* Barra de menu em posic,a'o absoluta */
+body{
 		/* background-color: white; */
 		/* Todo o fundo do site com fundo branco */
 		background-color: #dddddd;
-		color: rgba(0, 0, 0, 1);							
+		color: rgba(0, 0, 0, 1);
 }
 /* Difica'o contem todo o contu'do do corpo */
 /* Problemas na interface div */
 div#interface {
-	width: 800px;
+	width: 900px;
 	/* interface com fundo branco */
 	background-color: #ffffff;
+	/* Margens do site */
+	/* cima direita baixo esquerda */
 	margin: -30px, auto, 0px, auto;
-	box-shadow: 0px, 0px, 10px, black;
+	/* deslocamentos: */
+	/* lateral vertical espalhamento e cor */
+	/* Na'o esta' fazendo efeito */
+	/* na'o coloque entre virgulas resolvi o maldito problema */
+	box-shadow: 0px 0px 10px black;
+	/* configurando o espac,o interno do conteu'do */
+	padding: 30px 10px 20px 10px;
 }
 /* Estilisa os para'grafos */
 p{
 	text-align: justify;
-	text-indent: 50px;	
+	text-indent: 50px;
 }
-			
+
 /* Formatacao de imagem ou legenda */
 /* Cria uma borda em torno da imagem */
 figure.foto-legenda{
@@ -62,7 +71,7 @@ figure.foto-legenda:hover figcaption{
 /* Formatac,a'o do menu */
 /* Deveria retirar as marcac,o'es de ponto do menu */
 /* Na'o esta' funcionando */
-nav#menu ul { 
+nav#menu ul {
 	position: absolute;
 	top: -25px;
 	left: 250px;
@@ -113,8 +122,3 @@ nav#menu a:hover{
 	color: #ffffff;
 	text-decoration: underline;
 }
-
-
-
-
-
