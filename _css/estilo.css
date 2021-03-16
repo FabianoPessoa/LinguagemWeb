@@ -53,7 +53,7 @@ header#cabecalho {
 	 Na'o  funcionou no programa
 	talvez uma falha no direcionamento da pa'gina*/
 	/* background: url("../_imagens/glass-logo-peg.jpg"); */
-	background: url("glass-logo-peg.jpg") no-repeat 0px 100px;
+	background-image: url("../_imagens/glass-logo-peg.jpg");
 }
 /* O do Google Glass */
 header#cabecalho h1{
