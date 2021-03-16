@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face{
-	font-family: 'FonteLogo	'; 
+	font-family: 'FonteLogo	';
 	src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 /* Estilisa toda a a'rea */
@@ -57,7 +57,9 @@ header#cabecalho {
 }
 /* O do Google Glass */
 header#cabecalho h1{
-	font-family: 'FonteLogo', sans-serif;
+	/* font-family: 'FonteLogo', sans-serif; */
+	/* Na'o funcionou pois na'o achei o url da fonte. */
+	font-family: Arial, sans-serif;
 	font-size: 30pt;
 	color: #606060;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
