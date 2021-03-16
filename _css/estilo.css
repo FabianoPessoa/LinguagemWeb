@@ -43,16 +43,8 @@ header#cabecalho img#icone{
 }
 /* configuracao dos objetos que esta'o do cabec,alho */
 header#cabecalho {
-	/* linha que passa no topo */
 	border-bottom: 1px #606060 solid;
-	/* desce a linha um pouco */
 	height:  150px;
-	/* para carregar a imagem no co'digo css */
-	/* fac,a movimento de direto'rio como num terminal
-     tipo ../_imagens/logo.png
-	 Na'o  funcionou no programa
-	talvez uma falha no direcionamento da pa'gina*/
-	/* background: url("../_imagens/glass-logo-peg.jpg"); */
 	background-image: url("../_imagens/glass-logo-peg.jpg");
 }
 /* O do Google Glass */
