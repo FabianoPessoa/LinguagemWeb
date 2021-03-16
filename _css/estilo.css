@@ -51,9 +51,24 @@ header#cabecalho {
 	/* background: url("../_imagens/glass-logo-peg.jpg"); */
 	background: url("glass-logo-peg.jpg") no-repeat 0px 100px;
 }
-
+/* O do Google Glass */
 header#cabecalho h1{
 	font-family: Arial, sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	padding: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	margin-bottom: -3px;
+}
+/* A revoluc,a'o  do Google... */
+head#cabecalho h2{
+	font-family: Arial, sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: -1px;
 }
 /* Formatacao de imagem ou legenda */
 /* Cria uma borda em torno da imagem */
