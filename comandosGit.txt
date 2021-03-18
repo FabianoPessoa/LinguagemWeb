@@ -204,6 +204,84 @@ $ git push
 Obs.:
 A partir de agora procure trabalhar em cima dos arquivos
 da internet. Fac,a BackUp em computador frequente.
+=====================================================
+*** RASTREANDO E DESFAZENDO ALTERACOES
+Para alteracoes nao armazenadas
+$ git checkout <hash>
+Volta para o ultimo hash porque nao foi armazenado
+Para alteracoes nao armazenadas
+
+********Para apagar versoes armazenadas *******
+$ git checkout <hash desejado>
+Volta para a versao desejada
+$ git checkout master
+Volta a ultima versao do ramo
+$ git bransh
+Identifica qual ramo voce esta
+master e o ramo principal
+$ git diff
+Visualiza as mudancas feitas
+Se  as alteracoes ja foram feitas
+e adicionadas ao conteiner nao poderao
+retornar com o $ git checkout <hash>
+Fazer entao:
+$ git reset HEAD 
+Tira as alteracoes do conteiner
+$ git diff 
+Funciona de novo
+$ git checkout <hash>
+Volta ao hash anteriormente feito.
+******* Para apagar um commit ******
+$ git reset --hard <hash>
+Volta ao hash e apaga todos os commit a frente
+
+===========================================
+****** CIRANDO RAMIFICACOES
+-------------------------------------------
+$ git bransh
+* master
+Identifica a ramificacao
+$ git log --oneline
+Ve as ramificacoes
+Se voce quiser fazer alguma alteracao nas
+vesoes anteriores, devera fazer
+$ git checkout -b <nomedaramificacao>
+Cria a ramificacao
+$ git log --oneline
+Mostra a ramificacao criada
+$ git bransh
+  master
+* ramocriado
+Depois de fazer va'rias alterac,a'oes dentro do ramo
+volte ao ramo master com...
+$ git checkout master
+Volta ao ultimo commit dentro do master
+$ git branch
+* master
+  teste
+Agora eu fac,o  alterac,o'es nos dois ramos
+Perceba que os dois ramos te'm commits de alterac,o'es
+Para visualizar os dois ramos...
+$ git log --oneline --graph --all
+Tirando o oneline
+$ git log --graph --all
+Precione q para sair
+Fazendo a fusa'o dos ramos
+$ git bransh
+* master
+  novoramo
+Para fundir os ramos fac,a:
+$ git merge novoramo
+Sera' identificada os conflitos porque os dois ramos 
+foram aterados
+Para abortar o processo de funsa'o
+$ git merge --abort
+Para continuas com a funsa'o depois de resolvidos todos
+os conflitos fac,a:
+$ git add *
+$ git commit -m "Fusa'o dos ramos e resoluc,a'o dos
+conflitos"
+Para a funsa'o dos ramos devem ser solucionados os conflitos
 
 
 
