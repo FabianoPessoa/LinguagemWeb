@@ -205,28 +205,29 @@ Obs.:
 A partir de agora procure trabalhar em cima dos arquivos
 da internet. Fac,a BackUp em computador frequente.
 =====================================================
-*** RASTREANDO E DESFAZENDO ALTERACOES
-Para alteracoes nao armazenadas
+*** RASTREANDO E DESFAZENDO ALTERACOES **********
+--------------------------------------------------
+Para alteracoes na'o armazenadas
 $ git checkout <hash>
-Volta para o ultimo hash porque nao foi armazenado
-Para alteracoes nao armazenadas
+Volta para o u'ltimo hash porque na'o foi armazenado
+Para alterac,o'es na'o armazenadas
 
-********Para apagar versoes armazenadas *******
+********Para apagar verso'es armazenadas *******
 $ git checkout <hash desejado>
 Volta para a versao desejada
 $ git checkout master
-Volta a ultima versao do ramo
+Volta a u'ltima versao do ramo
 $ git bransh
-Identifica qual ramo voce esta
-master e o ramo principal
+Identifica qual ramo voce' esta'
+master e' o ramo principal
 $ git diff
 Visualiza as mudancas feitas
-Se  as alteracoes ja foram feitas
-e adicionadas ao conteiner nao poderao
+Se  as alterac,o'es ja' foram feitas
+e' adicionadas ao conteiner na'o podera'o
 retornar com o $ git checkout <hash>
-Fazer entao:
+Fazer enta'o:
 $ git reset HEAD 
-Tira as alteracoes do conteiner
+Tira as alteracoes para fora do conteiner
 $ git diff 
 Funciona de novo
 $ git checkout <hash>
@@ -236,15 +237,15 @@ $ git reset --hard <hash>
 Volta ao hash e apaga todos os commit a frente
 
 ===========================================
-****** CIRANDO RAMIFICACOES
+****** CRIANDO RAMIFICAC,O'ES
 -------------------------------------------
 $ git bransh
 * master
-Identifica a ramificacao
+Identifica a ramificac,a'o
 $ git log --oneline
-Ve as ramificacoes
-Se voce quiser fazer alguma alteracao nas
-vesoes anteriores, devera fazer
+Ve' as ramificac,o'es
+Se voce quiser fazer alguma alterac,a'o nas
+verso'es anteriores, devera' fazer uma ramificac,a'o:
 $ git checkout -b <nomedaramificacao>
 Cria a ramificacao
 $ git log --oneline
@@ -282,9 +283,4 @@ $ git add *
 $ git commit -m "Fusa'o dos ramos e resoluc,a'o dos
 conflitos"
 Para a funsa'o dos ramos devem ser solucionados os conflitos
-
-
-
 		FIM DE COMANDOS DO GITHUB
-
-
