@@ -173,19 +173,50 @@ section#corpo {
 	border-right: 1px solid #606060;
 	padding-right: 15px;
 }
+
+/* ************* Tabela ************ */
+/* Objeto Tabela */
 table#tabelaspec {
 	border: 1px solid #606060;
 	border-spacing: 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
+/* Objeto td */
 table#tabelaspec td {
 		border: 1px solid #606060;
 		padding: 10px;
 		text-align: center;
 		vertical-align: middle;
 }
+/* Coluna da esquerda e coluna da direito */
+/* Classes cd */
+table#tabelaspec td.ce{
+	/* coloracao cinza */
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+}
+/* Classe cd */
+table#tabelaspec td.cd{
+	/* coloracao um pouco clara */
+	background-color: #cecece;
+}
 
+table#tabelaspec caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+/* Posicao das data marc/2013 */
+table#tabelaspec caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
 
 aside#lateral {
 	display: block;
