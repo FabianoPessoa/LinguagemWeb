@@ -6,7 +6,6 @@
 ":colorscheme delek
 ":colorscheme  koehler
 ":colorscheme evening
-
 " --- Interface -----
 :set showmatch
 "numera as linha
@@ -16,7 +15,10 @@
 ":tabnew
 :set showmode
 :set ruler
-":set list
+" Mostra os sinais de tabulac,a'o, espac,o e quebra
+" de linha
+" So' funciona no neoVim
+:set list
 " Mostra as chaves parênteses ou colchetes pares
 :setlocal sm
 " Reporta ações com linhas no rodape
@@ -24,11 +26,9 @@
 "--- highlight para sintax ---
 :syntax on
 :syntax enable
-
 " ---- Sair do Modo de Inserc,a'o e Comando ----
 " ---sem usar o <esc>
 " E' so' fazer [Ctrl] + [
-
 " -----------------------------------------
 ":vsplit
 ":tabnew
@@ -36,17 +36,41 @@
 ":e! <outro co'digo/script
 "---- Usando Substituic,a'o de co'digos ------
 ":imap <novoComando> <conjuntodeCo'digosSubstituidos>
-:set syntax=vim
+":set syntax=vim
 "set syntax=java
 "set syntax=python
+" ---------------------------
+"   Sintaxe html </>
 "set syntax=html
-set syntax=c
-:imap ( ();
+":imap <html> <html></html>
+":imap <a> <a></a>
+":imap <span> <span></span>
+":imap <!-- <!--  -->
+":imap <title> <title>  </title>
+":imap <body> <body>  </body>
+":imap <div> <div>  </div>
+":imap <header> <header>  </header>
+":imap <hgroup> <hgroup>  </hgroup>
+":imap <section> <section>  </section>
+":imap <article> <article>  </article>
+":imap <aside> <aside>  <aside>
+":imap <footter> <footter>  </footter>
+":imap <nav> <nav>  </nav>
+":imap <ul> <ul>  </ul>
+":imap <ol> <ol>  </ol>
+"imap <h1> <h1>  </h1>
+":imap <h2> <h2>  </h2>
+":imap <h3> <h3>  </h3>
+" --------------------------
+"  Sintaxe Linguagem {C,C++,C#}
+"set syntax=c
+":imap ( ();
 ":imap " "" 
-:imap < <>
-:imap { {}
-:imap [ []
-:imap /* /**/
+":imap < <>
+":imap { {}
+":imap [ []
+":imap /* /**/
+" --------------------------
 "set syntax=txt
 "set syntax=batch
 "set syntax=sh
@@ -84,21 +108,18 @@ set syntax=c
 " ignora caps lock
 :set ignorecase
 :set hlsearch
-
 "--- Sistemas de Mouse -----
 :set selectmode=mouse,key
 :set mousemodel=popup
 "Coloca o controle do cursor para o mouse
 :set mouse=a
 :set cursorline
-
 "---------------------------
 :set keymodel=startsel,stopsel
 " Na'o compilou direito
 ":set selection=excluse
 :set clipboard=unnamedplus
 :set smartindent
-
 "--- Converte o tab em espac,os em branco  ----
 "ao teclar tab o vim ira' substituir por
 "dois espac,os.
@@ -107,7 +128,7 @@ set syntax=c
 "colapsar os co'digos.
 :set foldmethod=syntax
 :set foldlevel=99
-nnoremap <space> za
+"nnoremap <space> za
 "na'o sei se vai funcionar
 :let g:indentLine_enabled = 1
 :map <c-k>i :IndentLinesToggle<cr>
