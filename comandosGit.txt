@@ -1,4 +1,4 @@
-Cria um arquivo oculto .git
+ Cria um arquivo oculto .git
 	C\> git init
 Verifica o status do conteiner
 C\> git status
@@ -211,7 +211,9 @@ Para alteracoes na'o armazenadas
 $ git checkout <hash>
 Volta para o u'ltimo hash porque na'o foi armazenado
 Para alterac,o'es na'o armazenadas
-
+$ git restore *
+Limpara' todas as alterac,o'es dos arquivos
+na'o adicionados ao container
 ********Para apagar verso'es armazenadas *******
 $ git checkout <hash desejado>
 Volta para a versao desejada
