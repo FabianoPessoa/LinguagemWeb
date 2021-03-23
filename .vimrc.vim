@@ -153,7 +153,19 @@
 "set syntax=java
 "set syntax=python
 "set syntax=html
-":imap 
+:imap <!- <!-  -->
+:imap <html> <html>  </html>
+:imap <body> <body>  </body>
+:imap <head> <head>  </head>
+:imap <h1> <h1> </h1>
+:imap <h2> <h2> </h2>
+:imap <h3> <h3> </h3>
+:imap <div> <div>  </div>
+:imap <a> <a>  </a>
+:imap <p> <p> </p>
+":set syntax=CSS
+:imap { {  }
+:imap /* /*  */
 "set syntax=c
 ":imap ( ();
 ":imap " "" 
@@ -226,3 +238,12 @@ map! ~o õ
 map! ~O Õ
 map! 'u ú
 map! 'U Ú 
+
+"==========================================================
+" ------------Configurac,a'o  da Tela -------------------
+"  --------------------------------------------------------
+e! index.html
+:tabnew
+:e! _css/estilo.css
+:tabnew
+:e! .vimrc.vim
