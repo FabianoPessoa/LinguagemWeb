@@ -1,28 +1,132 @@
-"---- Coloca temas -----
+" --------------------------------------------------------
+"  ****  Configuração Básica do NeoVim preferenciais ***
+"  ------------------------------------------------------
+" Forma de aplicar configurações iniciais e linha de comandos
+" nvim -u _vimrc.vim
+" ou
+" vim -u _vimrc.vim
+" ou para Linux
+" vi -u .vimrc.vim
+" Abrindo as configurações junto com um novo arquivo
+" nvim (ou equivalente) -u _vimrc.vim <arquivo>.<formato>
+"=======================================================
+" ---- Temas ---
 ":colorscheme blue
 ":colorscheme morning
 ":colorscheme darkblue
 ":colorscheme shine
 ":colorscheme delek
-":colorscheme  koehler
+":colorscheme koehlet
 ":colorscheme evening
-" --- Interface -----
-:set showmatch
-"numera as linha
+":colorscheme industry
+":colorscheme koehler
+":colorscheme morning
+":colorscheme murphy
+":colorscheme pablo
+":colorscheme peachpuff
+":colorscheme ron
+":colorscheme shine
+":colorscheme slate
+":colorscheme torte
+":colorscheme zellner
+"=========================================================
+"=========================================================
+" -----:Configurac,o`es de Menu e interface:---------------
+"-----------------------------------------------
+" Recuo da numerac,a'o
+:set numberwidth=4
+" insere o número de linhas
 :set nu
-"--- Ti'tulos e Menus ----
+:set number
+" Insere o título do arquivo
 :set title
-":tabnew
-:set showmode
-:set ruler
-" Mostra os sinais de tabulac,a'o, espac,o e quebra
-" de linha
-" So' funciona no neoVim
-:set list
+:set showtabline=2
+" Mostra comandos
+:set showcmd
+:set encoding=utf-8
+" ----------------------------------------------------
+" quebra de linha do texto
+" verificar qual é o ideal quebra de linhas
+" passa para próxima linha
+:set textwidth=80
+"número de linhas na tela
+":set lines=50 
+
+" ---- Sair do Modo de Inserc,a'o e Comando ----
+" ---sem usar o <esc>
+" E' so' fazer [Ctrl] + [
+" -----------------------------------------
+
+"==========================================
+"---:Mouse Curso e formatacao de texte:-----------
+" ----------------------------------------
+:set selectmode=mouse,key
+:set mousemodel=popup
+:set keymodel=startsel,stopsel
+"Coloca o controle do cursor para o mouse
+:set mouse=a
+:set cursorline
+:set clipboard=unnamedplus
+:set smartindent
+:set selection=exclusive
+"Case sempre tenha oportunidade preto
+:set background=dark
+:set t_Co=256
+" Não produzir arquivo auxilinar ~<>
+:set nobackup
 " Mostra as chaves parênteses ou colchetes pares
 :setlocal sm
 " Reporta ações com linhas no rodape
 :setlocal report=0
+"colapsa o co'digo
+:set foldmethod=syntax
+:set foldenable
+:set foldlevelstart=10
+:set wildmenu
+"na'o sei se vai funcionar
+":let g:indentLine_enabled = 1
+":map <c-k>i :IndentLinesToggle<cr>
+":set wm=10
+"==========================================
+" Mostras os comandos já realizados
+" No Mode de --INSERÇÃO-- [Ctrl] + p
+" seta pra baixo v e pra cima ^para selecionar
+" -----------------------------------------
+"------ Configura tabulacao  -------
+":set tabstop=4 "softtabstop=4 expandtab shiftwidth=4
+" Recuo puramente c/ tabulac,a'o rigida
+:set shiftwidth=2
+:set tabstop=2
+"tecle a barra de espac,o no modo normal para o Vim
+"colapsar os co'digos.
+":set foldmethod=syntax
+":set foldlevel=99
+"--- Coloca o titulo em cima ---
+:set incsearch
+:set t_Co=256
+"--- Na'o cria arquivo swap ---
+:set nobackup
+"------Deixa o u'ltimo tab
+:set autoindent
+" ignora caps lock
+:set ignorecase
+:set hlsearch
+" ------------------------------------
+" Inicia o NeoVim com várias abas
+":tabnew
+" Imprime os modos 
+:set showmode
+"mostra o casamento de {},[],()
+:set showmatch
+:set ruler
+:set list
+:set nowrap
+:set history=5
+" Mostra as chaves parênteses ou colchetes pares
+:setlocal sm
+" Reporta ações com linhas no rodape
+:setlocal report=0
+"=======================================================
 "--- highlight para sintax ---
 :syntax on
 :syntax enable
@@ -30,39 +134,38 @@
 " ---sem usar o <esc>
 " E' so' fazer [Ctrl] + [
 " -----------------------------------------
-":vsplit
-":tabnew
-"Para mudar de tela <Ctrl> + w + w
+"=======================================================
+":vsplit	"Divide a tela em dois
+"		"[Ctrl] + w + w Muda a tela
+":split
+"Para passar de uma tela para outra
+"[Ctrl]+[w]+[w]
+":tabnew	"Cria v'arias telas uma atra's da outra
+"		tabn		"Muda a tela pra frente
+"		tabp		"Muda a tela pra tra's
+"=====================================================
+" Abrindo ou editando um arquivo
 ":e! <outro co'digo/script
-"---- Usando Substituic,a'o de co'digos ------
+
+"--------- Usando Substituic,a'o de co'digos ------
 ":imap <novoComando> <conjuntodeCo'digosSubstituidos>
 ":set syntax=vim
 "set syntax=java
 "set syntax=python
-" ---------------------------
-"   Sintaxe html </>
 "set syntax=html
-":imap <html> <html></html>
-":imap <a> <a></a>
-":imap <span> <span></span>
-":imap <!-- <!--  -->
-":imap <title> <title>  </title>
-":imap <body> <body>  </body>
-":imap <div> <div>  </div>
-":imap <header> <header>  </header>
-":imap <hgroup> <hgroup>  </hgroup>
-":imap <section> <section>  </section>
-":imap <article> <article>  </article>
-":imap <aside> <aside>  <aside>
-":imap <footter> <footter>  </footter>
-":imap <nav> <nav>  </nav>
-":imap <ul> <ul>  </ul>
-":imap <ol> <ol>  </ol>
-"imap <h1> <h1>  </h1>
-":imap <h2> <h2>  </h2>
-":imap <h3> <h3>  </h3>
-" --------------------------
-"  Sintaxe Linguagem {C,C++,C#}
+:imap <!- <!-  -->
+:imap <html> <html>  </html>
+:imap <body> <body>  </body>
+:imap <head> <head>  </head>
+:imap <h1> <h1> </h1>
+:imap <h2> <h2> </h2>
+:imap <h3> <h3> </h3>
+:imap <div> <div>  </div>
+:imap <a> <a>  </a>
+:imap <p> <p> </p>
+":set syntax=CSS
+:imap { {  }
+:imap /* /*  */
 "set syntax=c
 ":imap ( ();
 ":imap " "" 
@@ -70,13 +173,11 @@
 ":imap { {}
 ":imap [ []
 ":imap /* /**/
-" --------------------------
 "set syntax=txt
 "set syntax=batch
 "set syntax=sh
-"?????
 "set syntax=js
-" Se a sintaxe na'ao funcionou
+" ----------Se a sintaxe na'ao funcionou---------------
 "Para controlar a sintaxe faça:
 ":set syntax="vim"		"para configurac,a'ca'o Vi
 ":set syntax="txt"		para textos comuns
@@ -91,55 +192,6 @@
 ":set syntax="CSS"		para CSS
 ":set syntax="sql"		para DataBase SQL
 "-------------------------------------------------------
-:set showcmd
-:set encoding=utf-8
-":tabp
-":tapn
-"--- Coloca o titulo em cima ---
-:set showtabline=2
-:set incsearch
-:set t_Co=256
-"--- Na'o cria arquivo swap ---
-:set nobackup
-"ignora capslock na busca
-:set ignorecase
-"------Deixa o u'ltimo tab
-:set autoindent
-" ignora caps lock
-:set ignorecase
-:set hlsearch
-"--- Sistemas de Mouse -----
-:set selectmode=mouse,key
-:set mousemodel=popup
-"Coloca o controle do cursor para o mouse
-:set mouse=a
-:set cursorline
-"---------------------------
-:set keymodel=startsel,stopsel
-" Na'o compilou direito
-":set selection=excluse
-:set clipboard=unnamedplus
-:set smartindent
-"--- Converte o tab em espac,os em branco  ----
-"ao teclar tab o vim ira' substituir por
-"dois espac,os.
-:set tabstop=4 softtabstop=4 expandtab shiftwidth=4
-"tecle a barra de espac,o no modo normal para o Vim
-"colapsar os co'digos.
-:set foldmethod=syntax
-:set foldlevel=99
-"nnoremap <space> za
-"na'o sei se vai funcionar
-:let g:indentLine_enabled = 1
-:map <c-k>i :IndentLinesToggle<cr>
-:set wm=10
-:set foldlevelstart=10
-:set foldenable
-:set wildmenu
-" ---- Sair do Modo de Inserc,a'o e Comando ----
-" ---sem usar o <esc>
-" E' so' fazer [Ctrl] + [
-" -----------------------------------------
 ":vsplit
 ":tabnew
 "Para mudar de tela <Ctrl> + w + w
@@ -156,5 +208,42 @@ if &term =~ 'xterm-256color'    " mintty identifies itself as xterm-compatible
   if &t_Co == 8
     set t_Co = 256              " Use at least 256 colors
   endif
-  " set termguicolors           " Uncomment to allow truecolors on mintty
+  " set termguicolors           " Uncomment to allow truecolors on mintty  
 endif
+
+"======================================================
+"------------:Mapeamento de teclas:---------------------
+"------------------------------------------------------
+map! 'a á
+map! 'A Á
+map! 'e é
+map! 'E É
+map! 'i í
+map! 'I Í
+map! 'o ó
+map! 'O Ó
+map! ~a ã
+map! ~A Ã
+map! ^a â
+map! ^A Â
+map! `a à
+map! `A À
+map! ,c ç
+map! ,C Ç
+map! ^e ê
+map! ^E Ê
+map! ^o ô
+map! ^O Ô
+map! ~o õ
+map! ~O Õ
+map! 'u ú
+map! 'U Ú 
+
+"==========================================================
+" ------------Configurac,a'o  da Tela -------------------
+"  --------------------------------------------------------
+e! index.html
+:tabnew
+:e! _css/estilo.css
+:tabnew
+:e! .vimrc.vim
