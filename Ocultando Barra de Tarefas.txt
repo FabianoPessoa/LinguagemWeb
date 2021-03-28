@@ -1,0 +1,54 @@
+--------:Sublime:-----------
+view/showmenu
+Alt+v mostra a barra
+Ctrl + / comentar
+Ctro + o abrir
+Ctro + n novo
+Ctrl + PgDn/PgUp mudar aba
+Ctrl + s salvar
+Ctrl +Shift + s salvar como
+Ctrol + w fechar aba
+Ctrl + w fecha Sublime 
+------:NotePad++:-----------
+[F12]: Oculta barra de tarefas
+[F11]: Deixa a tela inteira
+
+[Ctrl]+k: comenta'rio
+[Ctrol][Shift]+k descomenta
+
+[Ctrl]+[Shift]+[PgUp] ou [PgDn]: Mudar aba
+[Ctrl] + o: Abrir arquivo
+[Ctrl] + n: nova aba
+
+[Ctrl] + w fechar abas
+[Alt] + F4 fecha o editor
+--------:Atom:-------------
+Antes vá no View/Toggle Menu Bar
+[Alt]: Oculta barra de tarefas
+[F11]: deixa tela inteira
+[Ctrl]+/ comenta e descomenta
+---------:VSCode:-----------
+Va' em View/Aparrence/ShowMenuBar
+
+-------------:nvim:-------------
+configurac,o'es em win:
+C:\> nvim -u _vimrc.vim
+em Linux:
+:~$ vi -u .vimrc.vim
+----------Comandos de movimento Vi
+Modos do Vi
+Comando
+[Esc] ou Ctrl+[ ou Ctrl + c
+Virtual
+No modo comando fac,a digite: v
+Modo de insersão:
+Digite: i
+-----------------------------------
+Divisão de Tela
+:vsplit
+[Ctrl] + w  + w Muda de tela no :vsplit
+Gerac,a'o de abas
+:tabnew
+Para mudar de aba
+:tabn "pra frente
+:tabp "para tra's
