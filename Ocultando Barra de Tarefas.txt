@@ -1,4 +1,7 @@
 --------:Sublime:-----------
+Esconder menu em View/Hide..
+[Alt] + v deveria mostrar menu mas no
+linux no fez.
 view/showmenu
 Alt+v mostra a barra
 Ctrl + / comentar
@@ -8,7 +11,9 @@ Ctrl + PgDn/PgUp mudar aba
 Ctrl + s salvar
 Ctrl +Shift + s salvar como
 Ctrol + w fechar aba
-Ctrl + w fecha Sublime 
+Ctrl + w fecha Sublime
+[Alt]+[Shift] + 2 dar vsplit com duas telas
+Alt]+[Shift] + 1 volta com uma 
 ------:NotePad++:-----------
 [F12]: Oculta barra de tarefas
 [F11]: Deixa a tela inteira
