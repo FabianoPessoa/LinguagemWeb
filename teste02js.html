@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		/*  
+		* funca'o que acende a la'mpada
+		*/
+		function acendeLampada()
+		{	
+			// window.alert("alerta de acendeLampada");
+			document.getElementById("luz").src="_imagens/lampada-acesa.jpg";
+		}
+		/*  
+		* funca'o que apaga a la'mpada
+		*/
+		function apagaLampada()
+		{
+			document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+		}
+		function quebraLampada()
+		{
+			document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+		}
+	</script>
+</head>
+<body>
+	<h1>Acenda a Lâmpada</h1>
+	<!-- Lista de eventos nota'veis -->
+	<!-- Na'o tem virgula nos eventos      v -->
+	<!-- <img src="_imagens/lampada-apagada.jpg" onclick="acendeLampada()" /> -->
+	<!-- Na'o tem virgula nos eventos      v -->
+	<!-- Eventos:
+	Quando do movo o mouse: acende
+	Quando eu tiro o mouse: apaga
+	Quando eu cliquo: quebra -->
+	<img 
+		src="_imagens/lampada-apagada.jpg" 
+		id="luz"
+		onmousemove="acendeLampada()"
+		onmouseout="apagaLampada()" 
+		onclick="quebraLampada()"
+	/>
+
+</body>
+</html>

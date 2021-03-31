@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		/* Declarac,a'o de varia'vel */
+		/* Varia'vel Global */
+		var quebrada=false;
+		/*  
+		* funca'o que acende a la'mpada
+		*/
+		function mudaLampada(tipo)
+		{	
+			/*
+			* tipo 1: la'mpada lampada;
+			* tipo 2: la'mpada lampada;
+			* tipo 3: la'mpada quebrada;
+			*/
+			if (tipo == 1){
+				arquivo="_imagens\lampada-acesa.jpg";
+				//document.write("Fabiano1");
+			}
+			if (tipo == 2){
+				arquivo="_imagens\lampada-apagada.jpg";
+				//document.write("Fabiano2");
+			}
+			if (tipo == 3){
+				arquivo="_imagens\lampada-quebrada.jpg";
+				//document.write("Fabiano3");		
+			}
+			document.getElementById("luz").scr=arquivo;
+		}
+		
+	</script>
+</head>
+<body>
+	<h1>Acenda a Lâmpada</h1>
+	<!-- Lista de eventos nota'veis -->
+	<!-- Na'o tem virgula nos eventos      v -->
+	<!-- <img src="_imagens/lampada-apagada.jpg" onclick="acendeLampada()" /> -->
+	<!-- Na'o tem virgula nos eventos      v -->
+	<!-- Eventos:
+	Quando do movo o mouse: acende
+	Quando eu tiro o mouse: apaga
+	Quando eu cliquo: quebra -->
+	<!-- src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)"  onclick="mudaLampada(3)"/> -->
+	<img 
+		src="_imagens/lampada-apagada.jpg" 
+		id="luz" 
+		onmousemove="mudaLampada(1)" 
+		onmouseout="mudaLampada(2)"  
+		onclick="mudaLampada(3)"
+	/> 		
+						
+
+</body>
+</html>
