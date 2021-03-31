@@ -204,6 +204,22 @@ $ git push
 Obs.:
 A partir de agora procure trabalhar em cima dos arquivos
 da internet. Fac,a BackUp em computador frequente.
+Obs: Se voce' na'o esta' trabalhando em um reposito'rio
+que foi pushado do git e acabou de criar um reposito'rio
+em seu PC fac,a:
+#)-> Crie um reposito'rio no github:
+	<nome_do_repositorio>
+#)-> No terminal
+$ git remote add origin https://github.com/FabianoPessoa
+/<nome_do_repositorio>.git
+#)-> Veja se tem uma mensagem de erro por causa
+e reposito'rio ja' existente.
+$ git bransh -M main
+$ git push -u origin main
+#)-> Atualiza o reposito'rio criado dentro do git
+pela primeira vez.
+
+Em seguida fac,a como anteriormente. 
 =====================================================
 *** RASTREANDO E DESFAZENDO ALTERACOES **********
 --------------------------------------------------
