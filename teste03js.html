@@ -7,30 +7,37 @@
 	<script>
 		/* Declarac,a'o de varia'vel */
 		/* Varia'vel Global */
-		var quebrada=false;
-		/*  
-		* funca'o que acende a la'mpada
-		*/
+		var quebrada=false;		
 		function mudaLampada(tipo)
 		{	
 			/*
 			* tipo 1: la'mpada lampada;
 			* tipo 2: la'mpada lampada;
-			* tipo 3: la'mpada quebrada;
+			* tipo 3: la'mpada quebrada;			
 			*/
 			if (tipo == 1){
 				arquivo="_imagens/lampada-acesa.jpg";
-				//document.write("Fabiano1");
+				// document.getElementById("luz").src=arquivo;
+				// document.write("Fabiano1");
 			}
 			if (tipo == 2){
 				arquivo="_imagens/lampada-apagada.jpg";
-				//document.write("Fabiano2");
+				// document.getElementById("luz").src=arquivo;
+				// document.write("Fabiano2");
 			}
-			if (tipo == 3){
-				arquivo="_imagens/lampada-quebrada.jpg";
-				//document.write("Fabiano3");		
+			if (tipo == 3){				
+				arquivo="_imagens/lampada-quebrada.jpg";				
+				// document.getElementById("luz").src=arquivo;
+				// document.write("Fabiano3");		
 			}
-			document.getElementById("luz").scr=arquivo;
+			if(!quebrada)
+			{
+			document.getElementById("luz").src=arquivo;
+			if ( tipo == 3)
+				{
+					quebrada=true;
+				}
+			}
 		}
 		
 	</script>
@@ -48,10 +55,10 @@
 	<!-- src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)"  onclick="mudaLampada(3)"/> -->
 	<img 
 		src="_imagens/lampada-apagada.jpg" 
-		id="luz" 
+		id="luz"
 		onmousemove="mudaLampada(1)" 
 		onmouseout="mudaLampada(2)"  
-		onclick="mudaLampada(3)"
+		onclick="mudaLampada(3)"		
 	/> 		
 						
 
