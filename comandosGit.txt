@@ -219,7 +219,8 @@ $ git push -u origin main
 #)-> Atualiza o reposito'rio criado dentro do git
 pela primeira vez.
 
-Em seguida fac,a como anteriormente. 
+Em seguida fac,a como anteriormente: Clonando
+reposito'rio do site. 
 =====================================================
 *** RASTREANDO E DESFAZENDO ALTERACOES **********
 --------------------------------------------------
