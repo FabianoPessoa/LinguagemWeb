@@ -214,7 +214,7 @@ $ git remote add origin https://github.com/FabianoPessoa
 /<nome_do_repositorio>.git
 #)-> Veja se tem uma mensagem de erro por causa
 e reposito'rio ja' existente.
-$ git bransh -M main
+$ git branch -M main
 $ git push -u origin main
 #)-> Atualiza o reposito'rio criado dentro do git
 pela primeira vez.
