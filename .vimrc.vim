@@ -55,6 +55,10 @@
 " ---- Sair do Modo de Inserc,a'o e Comando ----
 " ---sem usar o <esc>
 " E' so' fazer [Ctrl] + [
+" -------Mudar de abas 
+" sem usar Ctrl + PgDn ou Ctrl + PgUp
+" g (segura) + t
+" ou g (segura) + Shift (segura) + T 
 " -----------------------------------------
 
 "==========================================
@@ -242,8 +246,18 @@ map! 'U Ú
 "==========================================================
 " ------------Configurac,a'o  da Tela -------------------
 "  --------------------------------------------------------
-e! index.html
+:e! index.html
 :tabnew
 :e! _css/estilo.css
 :tabnew
-:e! .vimrc.vim
+:e! _vimrc.vim
+:tabnew
+:e! google-glass.html
+:tabnew
+:e! fale-conosco.html
+:tabnew
+:e! fotos.html
+:tabnew
+:e! multimidia.html
+:tabnew
+:e!specs.html
