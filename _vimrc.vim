@@ -246,4 +246,4 @@ e! index.html
 :tabnew
 :e! _css/estilo.css
 :tabnew
-:e! .vimrc.vim
+:e! _vimrc.vim
