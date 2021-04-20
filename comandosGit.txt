@@ -222,8 +222,8 @@ pela primeira vez.
 Em seguida fac,a como anteriormente: Clonando
 reposito'rio do site. 
 =====================================================
-*** RASTREANDO E DESFAZENDO ALTERACOES **********
---------------------------------------------------
+******* RASTREANDO E DESFAZENDO ALTERACOES **********
+-----------------------------------------------------
 Para alteracoes na'o armazenadas
 $ git checkout <hash>
 Volta para o u'ltimo hash porque na'o foi armazenado
@@ -251,7 +251,7 @@ $ git diff
 Funciona de novo
 $ git checkout <hash>
 Volta ao hash anteriormente feito.
-******* Para apagar um commit ******
+**************** Para apagar um commit *************
 $ git reset --hard <hash>
 Volta ao hash e apaga todos os commit a frente
 
@@ -302,4 +302,9 @@ $ git add *
 $ git commit -m "Fusa'o dos ramos e resoluc,a'o dos
 conflitos"
 Para a funsa'o dos ramos devem ser solucionados os conflitos
+-----------------------------------------------------------
+******* quando fiz um $ git push dentro do ramo criado*****
+Ele soliciou
+$ git push --set-upstream origin <ramo>
+
 		FIM DE COMANDOS DO GITHUB
