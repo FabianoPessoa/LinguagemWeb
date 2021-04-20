@@ -306,5 +306,16 @@ Para a funsa'o dos ramos devem ser solucionados os conflitos
 ******* quando fiz um $ git push dentro do ramo criado*****
 Ele soliciou
 $ git push --set-upstream origin <ramo>
+----------------------------------------------------------
+************* Criar Ramo *********************
+Retornar ao master
+$ git checkout master
+$ git branch
+Verficar que esta' no master
+$ git merge novoramo
+Resolver conflitos
+ou
+$ git merge --abort
 
-		FIM DE COMANDOS DO GITHUB
+
+FIM DE COMANDOS DO GITHUB
