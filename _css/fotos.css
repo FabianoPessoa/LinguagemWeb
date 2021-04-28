@@ -16,6 +16,8 @@ ul#album-fotos li{
 	border: 5px solid #ffffff;
 	background-color: #ffffff;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	/* webkit na'o funcionando */
+	/* Tem um css que para wekit */
 	-webkit-transition: all .4s ease-in;
 }
 /* Escondeu os ti'tulos mas na'o aparece mais */
@@ -27,6 +29,7 @@ ul#album-fotos li span{
 	line-height: 370px;
 	padding: 5px;
 }
+/* Efeito de zoom out para zoom in na'o funciona */
 /* Efeitos com webkit */
 ul#algum-fotos li:hover {
 	-webkit-transform: scale(1.5);
