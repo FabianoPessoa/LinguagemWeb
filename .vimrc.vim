@@ -153,7 +153,7 @@
 "set syntax=java
 "set syntax=python
 "set syntax=html
-:imap <! <!--  -->
+:imap <!- <!-  -->
 :imap <html> <html>  </html>
 :imap <body> <body>  </body>
 :imap <head> <head>  </head>
