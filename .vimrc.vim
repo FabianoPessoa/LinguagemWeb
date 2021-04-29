@@ -50,7 +50,7 @@
 " passa para próxima linha
 :set textwidth=80
 "número de linhas na tela
-":set lines=50 
+":set lines=50
 
 " ---- Sair do Modo de Inserc,a'o e Comando ----
 " ---sem usar o <esc>
@@ -245,4 +245,4 @@ map! 'U Ú
 :tabnew
 :tabnew
 :tabnew
-:e! .vimrc.vim
+:e! _vimrc.vim
