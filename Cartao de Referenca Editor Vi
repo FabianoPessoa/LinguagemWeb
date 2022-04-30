@@ -2,10 +2,8 @@
 VIM - CARTÃO DE REFERÊNCIA 
 ===========================
 
-
 Movimentos básicos 
 ------------------
-
 
 h l k j . . . . . . . . . caracter esq., dir., linha acima, abaixo 
 b w . . . . . . . . . . . palavra/token esquerda, direita 
@@ -43,7 +41,6 @@ gum gUm . . . . . . . . . texto do movim. m minúsculo, maiúsculo
 <m >m . . . . . . . . . . desloca esq., dir. texto do movimento m 
 n<< n>> . . . . . . . . . desloca n linhas esquerda, direita
 
-
 Eliminação
 ----------
 
@@ -65,10 +62,6 @@ B  . . . . . . . . . . . {}
 i  . . . . . . . . . . . inner interior                                  
 a  . . . . . . . . . . . all tudo                        
 
-
-
-
-
 Caracteres especiais em padrões de busca
 ----------------------------------------
 
@@ -86,7 +79,6 @@ Caracteres especiais em padrões de busca
 \|  . . . . . . . . . . . separa dois ramos (or = ou lógico)
 \( \) . . . . . . . . . . agrupa padrões em um átomo
 
-
 Deslocamentos em comandos de busca
 ----------------------------------
 
@@ -95,9 +87,6 @@ n ou +n . . . . . . . . . linha n abaixo na coluna 1
 e+n e-n . . . . . . . . . n caracteres a dir., esq. do fim da combin.
 s+n s-n . . . . . . . . . n caracteres a dir., esq. do começo combin.
 ;sc . . . . . . . . . . . executa comando de busca sc próximo
-
-
-
 
 Marcas e movimentos
 -------------------
@@ -112,9 +101,6 @@ mc  . . . . . . . . . . . marca posição atual com marca c 2 [a..Z]
 n^O . . . . . . . . . . . vai para n° posição mais velha na lista saltos
 n^I . . . . . . . . . . . vai para n° posição mais nova na lista saltos
 
-
-
-
 Mapeamento de teclas & abreviaçõoes
 -------------------------------------
 
@@ -125,8 +111,6 @@ Mapeamento de teclas & abreviaçõoes
 :ab c e [Enter] . . . . . adiciona abreviação para c -> e
 :ab c  [Enter]. . . . . . mostra abreviação começando com c
 :una c [Enter]. . . . . . remove abreviação c
-
-
 
 Modo Inserção
 -------------
@@ -144,9 +128,6 @@ Modo Inserção
 ^X^E ^X^Y . . . . . . . . rola acima, abaixo
 <esc> ou ^[ . . . . . . . abandona edição ! modo comando
 
-
-
-
 Copiando
 --------
 
@@ -160,11 +141,8 @@ p P . . . . . . . . . . . cola registrador depois, antes da posição cursor
 gp gP . . . . . . . . . . como p, P deixando cursor depois texto novo
 ^e  . . . . . . . . . . . copia a linha abaixo na linha atual (- insert mode -) 
 
-
-
 Inserção Avançada
 -----------------
-
 
 g?m . . . . . . . . . . . faz codificação rot13 no movimento m
 n^A n^X . . . . . . . . . +n, -n no número sob o cursor
@@ -176,11 +154,8 @@ gqm . . . . . . . . . . . formata linhas do mov. m com largura fixada
 n!!c [Enter]  . . . . . . filtra n linhas através do comando c
 :r!c [Enter]  . . . . . . filtra faixa de r linhas através do comando c
 
-
-
 Modo Visual
 -----------
-
 
 v V ^V  . . . . . . . . . começa/pára destaque caract., linhas, bloco
 o . . . . . . . . . . . . troca posição do cursor com início do destaque
@@ -188,11 +163,8 @@ gv  . . . . . . . . . . . inicia destaque na area visual anterior
 aw as ap  . . . . . . . . seleciona uma palavra, sentença, parágrafo
 ab aB . . . . . . . . . . seleciona um bloco ( ), um bloco { }
 
-
-
 Tags
 ----
-
 
 :ta t[Enter]  . . . . . . pula para tag t
 :nta[Enter] . . . . . . . pula para na tag mais nova na lista
@@ -206,10 +178,8 @@ Tags
 ^W] . . . . . . . . . . . divide janela e mostra tag sob cursor
 ^Wz ou :pc[Enter] . . . . fecha janela visualização tag
 
-
 Rolagem & multi-janela
 ----------------------
-
 
 ^E ^Y . . . . . . . . . . rola linha acima, abaixo
 ^D ^U . . . . . . . . . . rola meia página acima, abaixo
@@ -226,13 +196,8 @@ zH zL . . . . . . . . . . rola meia tela a direita, esquerda
 ^Wj ^Wk . . . . . . . . . move para janela abaixo, acima
 ^Ww ^W^W. . . . . . . . . move para janela abaixo, acima (troca)
 
-
-
-
-
 Comandos Ex ([Enter])
 ---------------------
-
 
 :e f  . . . . . . . . . . edita arquivo f, a menos que modificado
 :e! f . . . . . . . . . . edita arq. f sempre (por padrão relê atual)
@@ -249,13 +214,8 @@ Comandos Ex ([Enter])
 :all. . . . . . . . . . . abre janela para cada arquivo na lista argtos.
 :args . . . . . . . . . . mostra a lista de argumentos
 
-
-
-
-
 Comandos desfazer & repetir
 ---------------------------
-
 
 u U . . . . . . . . . . . desfaz último cmd, restaura última linha mudada
 . ^R  . . . . . . . . . . repete últimas mudanças, refaz último desfazer
@@ -267,11 +227,8 @@ q   . . . . . . . . . . . pára de gravar
 :@c [Enter] . . . . . . . executa registrador c como comando Ex
 :rg/p/c [Enter] . . . . . executa comando Ex c na faixa r
                          [onde padrão p combinar]
-
-
 Movimentos Complexos
 --------------------
-
 
 - + . . . . . . . . . . . linha acima/abaixo no 1° caracter não-branco
 B W . . . . . . . . . . . palavra separada por espaço a esq., a dir.
@@ -291,13 +248,8 @@ tc Tc . . . . . . . . . . antes da ocorrência seguinte, anterior de c
 [# ]# . . . . . . . . . . #if, #else, #endif não fechado atrás, a frente
 [* ]* . . . . . . . . . . começo, fim de /* */ atrás, a frente
 
-
-
-
-
 Busca & substituição
 -----------------------
-
 
 /s [Enter] ?s [Enter] . . procura a frente, atrás por s
 /s/o [Enter] ?s?o [Enter] . . .procura s atrás, frente com desloc. o
@@ -310,12 +262,8 @@ gd gD . . . . . . . . . . definição local, global de símbolo sob cursor
         [x : g-todas as ocorrências, c-confirma mudanças]
 :rs x [Enter] . . . . . . repete substituição com novos r &
 
-
-
-
 Faixas Ex
 ---------
-
 
 , ; . . . . . . . . . . . separa dois números linhas, def. para 1a linha
 n . . . . . . . . . . . . um número de linha n absoluto
@@ -325,13 +273,8 @@ n . . . . . . . . . . . . um número de linha n absoluto
 /p/ ?p? . . . . . . . . . linha seguinte, anterior onde p combina
 +n -n . . . . . . . . . . +n, -n até número linha precedente
 
-
-
-
 Miscelânea
 ----------
-
-
 :sh [Enter] :!c [Enter] . começa shell, executa cmdo. c em shell
 K . . . . . . . . . . . . procura palavra[Enter]chave sob cursor com man
 :make [Enter] . . . . . . começa make, lê erros e vai ao primeiro
@@ -382,7 +325,6 @@ d?pattern<ret> delete text from current pos to first occurrence of
 					pattern
 
 
-
  O comando append
  ----------------
  
@@ -398,7 +340,6 @@ d?pattern<ret> delete text from current pos to first occurrence of
 
  atenção pois o ponto incerra o comando
 
-
 O comando insert
 ----------------
   Um recurso muito interessante para adicionar texto
@@ -410,7 +351,6 @@ O comando insert
     \menssagem
     .
  atenção pois o ponto incerra o comando
-
 
 =============================================================================
 # vim:tw=78:ts=3:ft=help:norl:
